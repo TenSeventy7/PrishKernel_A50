@@ -23,6 +23,19 @@ export CROSS_COMPILE=$(pwd)/gcc/bin/aarch64-linux-android-
 export CLANG_TRIPLE=$(pwd)/clang/bin/aarch64-linux-gnu-
 export CC=$(pwd)/clang/bin/clang
 
+sudo apt-get update
+sudo DEBIAN_FRONTEND=noninteractive apt-get install \
+          bison build-essential curl flex git gnupg gperf \
+          liblz4-tool libncurses5-dev libsdl1.2-dev libxml2 \
+          libxml2-utils lzop pngcrush schedtool \
+          squashfs-tools xsltproc zip zlib1g-dev \
+          build-essential kernel-package libncurses5-dev \
+          bzip2 git python expect \
+          gcc-aarch64-linux-gnu g++-aarch64-linux-gnu -y
+
+#
+curl https://raw.githubusercontent.com/akhilnarang/scripts/master/setup/android_build_env.sh | bash
+
 # Check if have gcc/32 & clang folder
 if [ ! -d "$(pwd)/gcc/" ]; then
    git clone --depth 1 git://github.com/LineageOS/android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9 gcc
