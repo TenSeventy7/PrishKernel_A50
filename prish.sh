@@ -98,7 +98,7 @@ clear
 echo "==============="
 echo "Building Clean"
 echo "==============="
-make A50dd_defconfig
+make A50_defconfig
 make -j$(nproc --all)
 echo ""
 echo "Kernel Compiled"
@@ -114,7 +114,7 @@ echo "============"
 ############################################
 # If other device make change here
 ############################################
-make A50dd_defconfig
+make A50_defconfig
 make -j$(nproc --all)
 echo ""
 echo "Kernel Compiled"
@@ -152,7 +152,7 @@ clear
 echo "======================="
 echo "Making kernel with ZIP"
 echo "======================="
-make A50dd_defconfig
+make A50_defconfig
 make -j$(nproc --all)
 echo "Kernel Compiled"
 echo ""
@@ -170,14 +170,14 @@ echo "Packing into Flashable zip"
 echo "==========================="
 ./zip.sh
 cd ../..
-cp -r ./PRISH/ZIP/1.zip ./output/PrishKernel-ONEUI-R2-A50dd.zip
+cp -r ./PRISH/ZIP/1.zip ./output/PrishKernel-ONEUI-R2-A50.zip
 cd output
 echo ""
 pwd
 cd ..
 echo " "
 echo "======================================================="
-echo "get PrishKernel-Px-QQ-A50dd.zip from upper given path"
+echo "get PrishKernel-Px-QQ-A50.zip from upper given path"
 echo "======================================================="
 fi
 
@@ -198,7 +198,7 @@ echo "Packing into Flashable zip"
 echo "==========================="
 ./zip.sh
 cd ../..
-cp -r ./PRISH/ZIP/1.zip ./output/PrishKernel-ONEUI-R2-A50dd.zip
+cp -r ./PRISH/ZIP/1.zip ./output/PrishKernel-ONEUI-R2-A50.zip
 cd output
 cd ..
 echo " "
@@ -222,7 +222,7 @@ echo "Packing into Anykernelzip"
 echo "=========================="
 ./zip.sh
 cd ../..
-cp -r ./PRISH/AK/1*.zip ./output/PrishKernel-ONEUI-R2-Ak-A50dd.zip
+cp -r ./PRISH/AK/1*.zip ./output/PrishKernel-ONEUI-R2-Ak-A50.zip
 cd output
 cd ..
 echo " "
@@ -264,7 +264,7 @@ clear
 echo "======================="
 echo "Making kernel with ZIP"
 echo "======================="
-make A50dd_defconfig
+make A50_defconfig
 make -j$(nproc --all)
 echo "Kernel Compiled"
 echo ""
@@ -283,13 +283,13 @@ echo "Packing into Flashable zip"
 echo "==========================="
 . zip.sh
 cd ..
-cp -r ./TEST/*.zip ./output/PrishKernel-TEST-ONEUI-R2-A50dd.zip
+cp -r ./TEST/*.zip ./output/PrishKernel-TEST-ONEUI-R2-A50.zip
 cd output
 echo ""
 pwd
 cd ..
 echo " "
 echo "======================================================="
-echo "get PrishKernel-Px-QQ-A50dd.zip from upper given path"
+echo "get PrishKernel-Px-QQ-A50.zip from upper given path"
 echo "======================================================="
 fi
