@@ -19,18 +19,23 @@ ccache -M 50G
 export CCACHE_COMPRESS=1
 
 # TC LOCAL PATH
-export CROSS_COMPILE=$(pwd)/gcc/bin/aarch64-linux-android-
-export CLANG_TRIPLE=$(pwd)/clang/bin/aarch64-linux-gnu-
-export CC=$(pwd)/clang/bin/clang
+#export CROSS_COMPILE=$(pwd)/gcc/bin/aarch64-linux-android-
+#export CLANG_TRIPLE=$(pwd)/clang/bin/aarch64-linux-gnu-
+#export CC=$(pwd)/clang/bin/clang
+
+export CROSS_COMPILE=/home/neel/Desktop/toolchain/linaro/bin/aarch64-linux-gnu-
+export CLANG_TRIPLE=/home/neel/Desktop/toolchain/clang/bin/aarch64-linux-gnu-
+export CC=/home/neel/Desktop/toolchain/clang/bin/clang
+
 
 # Check if have gcc/32 & clang folder
-if [ ! -d "$(pwd)/gcc/" ]; then
-   git clone --depth 1 git://github.com/LineageOS/android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9 gcc
-fi
+#if [ ! -d "$(pwd)/gcc/" ]; then
+#   git clone --depth 1 git://github.com/LineageOS/android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9 gcc
+#fi
 
-if [ ! -d "$(pwd)/clang/" ]; then
-   git clone --depth 1 https://github.com/PrishKernel/toolchains.git -b proton-clang12 clang
-fi
+#if [ ! -d "$(pwd)/clang/" ]; then
+#   git clone --depth 1 https://github.com/PrishKernel/toolchains.git -b proton-clang12 clang
+#fi
 
 clear
 echo "                                                     "
