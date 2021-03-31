@@ -52,7 +52,7 @@ clear
 echo "======================="
 echo "Making kernel with ZIP"
 echo "======================="
-make A50dd_defconfig
+make A50_defconfig
 make -j64
 echo "Kernel Compiled"
 echo ""
@@ -70,4 +70,4 @@ echo "Packing into Flashable zip"
 echo "==========================="
 ./zip.sh
 cd ../..
-cp -r ./PRISH/ZIP/1.zip ./output/PrishKernel-ONEUI-R2-A50dd.zip
+cp -r ./PRISH/ZIP/1.zip ./output/PrishKernel-ONEUI-R4-A50dd.zip
