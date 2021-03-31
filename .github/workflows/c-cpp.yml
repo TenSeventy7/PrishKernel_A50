@@ -1,11 +1,8 @@
 name: C/C++ CI
-# Credits to Hendra Manudinata @hendramanu and @AkiraNoSushi
+# Credits to Hendra Manudinata @hendramanu and @AkiraNoSushi and @DAvinash97
 on:
-  push:
-    branches: [ R3 ]
-  pull_request:
-    branches: [ R3 ]
-
+  workflow_dispatch:
+    branches: [ test ]
 jobs:
   build:
 
