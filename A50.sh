@@ -59,7 +59,7 @@ rm ./PRISH/AIK/split_img/boot.img-zImage
 rm ./PRISH/AK/Image
 rm ./PRISH/ZIP/PRISH/NXT/boot.img
 rm ./PRISH/ZIP/PRISH/A50/boot.img
-rm ./PRISH/ZIP/PRISH/A50/boot.img
+rm ./PRISH/ZIP/PRISH/D/A50/boot.img
 rm ./PRISH/AK/*.zip
 clear
 echo "======================="
@@ -76,7 +76,7 @@ echo ""
 cp -r ./arch/arm64/boot/Image ./PRISH/AIK/split_img/boot.img-zImage
 cp -r ./arch/arm64/boot/Image ./PRISH/AK/Image
 ./PRISH/AIK/repackimg.sh
-cp -r ./PRISH/AIK/image-new.img ./PRISH/ZIP/PRISH/A50/boot.img
+cp -r ./PRISH/AIK/image-new.img ./PRISH/ZIP/PRISH/D/A50/boot.img
 cd PRISH/ZIP
 echo "==========================="
 echo "Packing into Flashable zip"
