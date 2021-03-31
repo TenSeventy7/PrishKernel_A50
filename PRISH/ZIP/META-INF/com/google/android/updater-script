@@ -19,7 +19,7 @@ ui_print(" ");
 ifelse(is_mounted("/system_root"), unmount("/system_root"));
 ifelse(is_mounted("/vendor"), unmount("/vendor"));
 ifelse(is_mounted("/cache"), unmount("/cache"));
-ui_print("- Huge thanks to @Astrako, @El0xren, @chatur2709,@airfraa, @DAvinash97, @physwizz, @OGSPARTANICUS and ofc and testers as well for thier time");
+ui_print("- Huge thanks to @Astrako, @El0xren, @chatur2709,@airfraa, @DAvinash97, @physwizz, @OGSPARTANICUS and ofc and testers as well for their time");
 ui_print(" ");
 ui_print("Getting Device Info...");
 ui_print(" ");
