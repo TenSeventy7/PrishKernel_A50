@@ -14,7 +14,7 @@ jobs:
           CHAT_ID: ${{ secrets.CHAT_ID }}
           BOT_TOKEN: ${{ secrets.BOT_TOKEN }} 
       run: |-
-          curl -F text="Started Compiling for A50" "https://api.telegram.org/bot${BOT_TOKEN}/sendMessage?chat_id=${CHAT_ID}&parse_mode=Markdown"
+          curl -F text="Started Compiling GSI kernel for A50" "https://api.telegram.org/bot${BOT_TOKEN}/sendMessage?chat_id=${CHAT_ID}&parse_mode=Markdown"
     - name: Prepare
       run: |
           sudo apt-get update
