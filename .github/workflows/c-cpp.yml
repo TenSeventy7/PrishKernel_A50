@@ -2,7 +2,7 @@ name: C/C++ CI
 # Credits to Hendra Manudinata @hendramanu and @AkiraNoSushi and @DAvinash97
 on:
   workflow_dispatch:
-    branches: [ test ]
+    branches: [ GSI ]
 jobs:
   build:
 
