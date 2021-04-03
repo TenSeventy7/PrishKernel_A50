@@ -6,3 +6,4 @@ out/
 output/PrishKernel-ONEUI-R5-A50dd.zip
 PRISH/AIK/ramdisk-new.cpio.empty
 PRISH/ZIP/1.zip
+*.fw
